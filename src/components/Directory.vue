@@ -1,24 +1,18 @@
-<script setup lang="ts">
-import CategoryItemComponent from '../category-item/category-item.component.vue'
+<script setup>
+import CategoryItem from './CategoryItem.vue'
 </script>
 
-<script lang="ts">
-interface Category {
-  id: number
-  title: string
-  imageUrl: string
-}
-
+<script>
 export default {
   props: {
-    categories: Array<Category>,
+    categories: Array,
   },
 }
 </script>
 
 <template>
   <div class="categories-container">
-    <CategoryItemComponent
+    <CategoryItem
       v-for="category in categories"
       :key="category.id"
       :title="category.title"

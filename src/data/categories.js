@@ -1,4 +1,4 @@
-export const categories = [
+const categories = [
   {
     id: 1,
     title: 'hats',
@@ -25,3 +25,5 @@ export const categories = [
     imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
   },
 ]
+
+export default categories

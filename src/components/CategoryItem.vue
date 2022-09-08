@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 export default {
   props: {
     title: String,
@@ -9,7 +9,10 @@ export default {
 
 <template>
   <div class="category-container">
-    <div class="background-image" :style="{ backgroundImage: `url(${imageUrl})` }" />
+    <div
+      class="background-image"
+      :style="{ backgroundImage: `url(${imageUrl})` }"
+    />
     <div class="category-body-container">
       <h1>{{ title }}</h1>
       <p>Shop Now</p>
